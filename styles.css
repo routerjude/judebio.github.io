@@ -1,0 +1,543 @@
+/*COLOR PALETTE*/
+:root{
+	--navBackgroundColor:#4b68de;
+	--navHoverColor:#de4bb1;
+	--navBarBackground:#05165b;
+	--white:#fff;
+	--green:#68de4b;
+	--yellow:#dec14b;
+
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: candara, sans-serif;
+	font-size: 17px;
+}
+nav{
+	width: 100%;
+	background: var(--navBackgroundColor);
+	font-size: 16.5px;
+}
+ul
+{
+	width: 80%;
+	margin: 0 auto;
+	padding: 0;
+}
+ul li
+{
+	list-style: none;
+	display: inline-block;
+	padding: 20px;
+}
+ul li:hover
+{
+	background: var(--navHoverColor);
+}
+ul li a
+{
+	color: var(--white);
+	text-decoration: none;
+}
+.toggle
+{
+	width: 100%;
+	padding: 10px 20px;
+	text-align: right;
+	box-sizing: border-box;
+	color: var(--white);
+	font-size: 25px;
+	display: none;
+	background:var(--navBarBackground);
+}
+.body-wrapper{
+	width: 100%;
+    margin: 0 auto;
+}
+#hide-list:hover{
+	background: none;
+}
+section span {
+	font-weight:bold;
+}
+	
+
+/*Nav Edit*/
+#logo 
+{
+  display: inline-flex;
+  width: 30px;
+  height: 25px;
+  margin: 0px 0 -6px 0;
+}
+.name-logo
+{
+	padding: 0 10px 0 0px;
+}
+#name
+{
+	display: inline-flex;
+	font-weight: bold;
+}
+
+/*Main*/
+.container
+{
+	margin: 50px;
+	border-radius: 5px 5px 10px 10px;
+	border: 0px solid #000000;
+	box-shadow: -2px 4px 8px 1px rgba(15,14,15,0.61);
+}
+.article-wrapper
+{
+	padding: 5px 15px 5px 15px;
+	text-align: center;
+}
+
+h2{
+	color: var(--navHoverColor);
+	 
+}
+
+/*Portfolio*/
+h3 {
+	color: var(--white);
+	margin-right: 23.5%;
+  	margin-left: 23.5%;
+}
+.work {
+	margin: 0 auto;
+  	background: var(--white);
+	z-index: auto;
+ 	position: relative;
+ 	transition: all 0.6s;
+}
+.portfolio-wrapper, .portfolio-wrapper2{
+ 	display: flex;
+ 	margin: 0;
+ 	flex-flow: row wrap;
+ }
+
+ .work{
+ 	padding: 20px;
+  }
+
+.description {
+  text-align: center;
+  font-size: 0.75em;
+  padding: 12px 3px 0 5px;
+  color: var(--white);
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+}
+
+input {
+	height: 4em;
+	display: block;
+	margin: auto;
+}
+
+input,
+textarea,footer {
+  width: 98%;
+  margin: 5px 5px;
+  font-family : inherit;
+}
+button {
+	width: 50%;
+	margin: 5px 200px 10px 250px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin: 8px 8px -8px 8px;
+}
+
+button {
+  min-width: 48px;
+  min-height: 48px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  background: var(--navHoverColor);
+  color: var(--white);
+  font-size: 1em;
+  font-weight: bold;
+  border: 0 solid var(--yellow);
+  
+}
+footer{
+	position: relative;
+	text-align: center;
+}
+
+
+/*MEDIA-QUERY*/
+@media (max-width: 768px)
+{
+	.toggle
+	{
+		display: block;
+	}
+	ul
+	{
+		width: 100%;
+		display:none;
+	}
+	ul li
+	{
+		display: block;
+		text-align: center;
+	}
+	.active
+	{
+		display: block;
+	}
+
+}
+
+@media screen and (max-width: 430px) {
+    .portfolio-wrapper, .portfolio-wrapper2{
+ 	display: flex;
+ 	margin: 5px;
+ 	flex-flow: column wrap;
+ }
+
+ 	.work{
+	margin-bottom: 0.5em;
+ 	width: 70%;
+ 	z-index: auto;
+ 	position: relative;
+ 	transition: all 0.6s;
+ 	height: 150px;	
+  }
+
+ .work1, .work2, .work3, .work4 {
+ 	width: 80%;
+ }
+
+ .work img {
+   padding: 0px -20px 0px 30px;
+   margin: 5px 15px 0 -20px;
+   width:200px;
+   height: :100px;
+  }
+  
+  .info {
+  	align-self: center;
+  	position: relative;
+  	margin-left: 5px;
+  }
+  button{
+  	margin: 0 auto;
+  }
+  footer{
+	width: 100%;
+	align-self: center;
+  	margin-top: -18px
+  }
+  .toggle
+	{
+		display: block;
+	}
+	ul
+	{
+		width: 100%;
+		display:none;
+	}
+	ul li
+	{
+		display: block;
+		text-align: center;
+	}
+	.active
+	{
+		display: block;
+	}
+
+}
+
+@media screen and (min-width: 431px) and (max-width: 499px) {
+
+  
+  /* Portfolio */
+  .work {
+    padding: 0px -20px 0px 30px;
+    margin: 5px 0px 0 -10px;
+    height: :100px;
+  }
+  .work img {
+    height: 50%;
+
+  }
+  .description {
+    top: 20px;
+    left: 14px;
+    right: 14px;
+    bottom: 10px;
+    padding-top: 10px;
+  }
+  .description p {
+    font-size: 1em;
+    padding-top: 10px;
+  }
+  button{
+  	margin: 0 auto;
+  }
+
+  footer{
+  	width: 100%;
+  	margin-top: -18px
+
+  }
+ .toggle
+	{
+	display: block;
+	}
+	ul
+	{
+		width: 100%;
+		display:none;
+	}
+	ul li
+	{
+		display: block;
+		text-align: center;
+	}
+	.active
+	{
+		display: block;
+	}
+ 
+}
+
+@media screen and (min-width: 500px) and (max-width: 629px) {
+  /*
+** Major changes to the portfolio
+** Contact Me and Footer sections
+** Using FLEXBOX LAYOUT.
+*/
+  /* Restyling the Portfolio section */
+
+  main {
+    margin: 0 auto;
+  }
+
+  /* Touching the Form for the contact section */
+  input {
+    margin: 0 40px 0 40px;
+    width: 100%;
+    }
+  label {
+    display: block;
+    margin: 0;
+    align-self: center;
+  }
+  button {
+    width: 50%;
+    margin: 0 auto;
+   }
+
+  textarea {
+    width: 80%;
+  }
+
+  .userinfo {
+    width: 80%;
+    background: var(--yellow);
+  }
+
+  form {
+ 
+    width: 88%;
+    margin: 0 auto;
+    background: var(--yellow);
+  }
+
+  /* changing the footer elements position */
+  footer {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2px;
+  }
+  .info {
+    text-align: center;
+  }
+  .toggle
+	{
+		display: block;
+	}
+	ul
+	{
+		width: 100%;
+		display:none;
+	}
+	ul li
+	{
+		display: block;
+		text-align: center;
+	}
+	.active
+	{
+		display: block;
+	}
+}
+
+@media screen and (min-width: 630px)and (max-width: 719px) {
+
+  .portfolio-wrapper, .portfolio-wrapper2{
+ 	display: flex;
+ 	margin: 0;
+ 	flex-flow: row wrap;
+ }
+
+ .work{
+ 	padding: 40px;
+ 	margin: 0 auto;
+  	width: 40%;
+  }
+
+ .work1, .work2, .work3, .work4 {
+ 	width: 60%;
+ }
+
+  form {
+    width: 97.9%;
+    display: flex;
+    margin: 0 auto;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background: var(--yellow);
+  }
+  .userinfo {
+    background: var(--yellow);
+    width: 80%;
+  }
+   textarea {
+    border: 5px solid var(--yellow);
+    margin: 0px 0px 10px 0px;
+    width: 80%;
+    height: 40%;
+  }
+
+   
+   button {
+    margin-top: -10px;
+  }
+  
+ /*the FOOTER LAYOUT*/
+  footer {
+    display: flex;
+    width: 100%;
+    min-height: 18vh;
+    font-size: 14px;
+    justify-content: space-around;
+    margin-top: -10px;    
+  }
+  .info, {
+    margin-top: 7;
+    text-align: center;
+  }
+  
+ 
+ }
+
+@media screen and (min-width: 720px) and (max-width: 850px){
+
+button {
+	width: 50%;
+	margin: 5px 150px 10px 150px;
+}
+
+label {
+ 
+  margin: 2px ;
+}
+form{
+	background: var(--yellow);
+}
+button {
+ background: var(--navHoverColor);
+  color: var(--white);
+  font-weight: bold;
+  border: 0 solid var(--yellow);
+  
+}
+footer{
+	position: relative;
+	text-align: center;
+}
+
+}
+
+@media screen and (min-width: 850px) {
+  #about,
+  #experience,
+  #contact {
+    width: 95%;
+    margin: 23px auto;
+  }
+  
+  .portfolio {
+    width: 95%;
+    margin: auto;
+  }
+
+  #contact {
+  	margin-top: 30px;
+  }
+  form {
+    width: 100%;
+  }
+  footer{
+    margin-top: -20px;
+  }
+
+}
+
+@media screen and (min-width: 956px) {
+  .wrapper {
+    font-size: 1.2em;
+  }
+  form{
+  	background: var(--yellow);
+}
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+  form{
+	background: var(--yellow);
+}
+}
+
+@media screen and (min-width: 1118px) {
+  #about,
+  #experience,
+  #contact,
+  .portfolio {
+    width: 85%;
+    border-right: 0;
+  }
+  form{
+  	margin: 0 -25px 0 -25px;
+  }
+  .article-wrapper
+{
+	padding: 5px 15px 5px 88px;
+	text-align: left;
+}
+}

@@ -1,0 +1,563 @@
+/*COLOR PALETTE*/
+:root{
+	--navBackgroundColor:#4b68de;
+	--navHoverColor:#de4bb1;
+	--navBarBackground:#05165b;
+	--white:#fff;
+	--green:#68de4b;
+	--yellow:#dec14b;
+
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: candara, sans-serif;
+	font-size: 17px;
+}
+nav{
+	width: 100%;
+	background: var(--navBackgroundColor);
+	font-size: 16.5px;
+}
+ul
+{
+	width: 80%;
+	margin: 0 auto;
+	padding: 0;
+}
+ul li
+{
+	list-style: none;
+	display: inline-block;
+	padding: 20px;
+}
+ul li:hover
+{
+	background: var(--navHoverColor);
+}
+ul li a
+{
+	color: var(--white);
+	text-decoration: none;
+}
+.toggle
+{
+	width: 100%;
+	padding: 10px 20px;
+	text-align: right;
+	box-sizing: border-box;
+	color: var(--white);
+	font-size: 25px;
+	display: none;
+	background:var(--navBarBackground);
+}
+.body-wrapper{
+	width: 100%;
+    margin: 0 auto;
+}
+	
+
+/*Nav Edit*/
+#logo 
+{
+  display: inline-flex;
+  width: 30px;
+  height: 25px;
+  margin: 0px 0 -6px 0;
+}
+.name-logo
+{
+	padding: 0 10px 0 0px;
+}
+#name
+{
+	display: inline-flex;
+	font-weight: bold;
+}
+
+/*Main*/
+.container
+{
+	margin: 50px;
+	border-radius: 5px 5px 10px 10px;
+	border: 0px solid #000000;
+	box-shadow: -2px 4px 8px 1px rgba(15,14,15,0.61);
+}
+.article-wrapper
+{
+	padding-left: 15px;
+}
+
+h2{
+	color: var(--navHoverColor);
+	 
+}
+
+/*Portfolio*/
+h3 {
+  color: var(--white);
+  border-bottom: 1px solid var(--baseColor);
+  margin-right: 23.5%;
+  margin-left: 23.5%;
+}
+.work {
+  margin-bottom: 1.45em;
+  width: 90%;
+  margin: 25px auto;
+  box-shadow: 4px 6px 2px var(--navHoverColor);
+  background: var(--white);
+  z-index: auto;
+  position: relative;
+  transition: all 0.6s;
+}
+
+.detail {
+  background: rgba(0, 0, 0, 0.65);
+  text-align: center;
+  font-size: 0.75em;
+  padding: 12px 3px 0 3px;
+  color: var(--white);
+  /*overflow-y: hidden;*/
+  position: absolute;
+  /*z-index: 2;*/
+  top: 33px;
+  left: 14px;
+  right: 14px;
+  bottom: 10px;
+}
+
+input {
+	height: 4em;
+	display: block;
+	margin: auto;
+}
+
+input,
+button,
+textarea,footer {
+  width: 90%;
+  margin: 5px auto;
+  font-family : inherit;
+}
+
+
+label {
+  font-weight: bold;
+  display: inline-block;
+  margin: 8px 0 -8px 10px;
+}
+
+button {
+  min-width: 48px;
+  min-height: 48px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  background: var(--navHoverColor);
+  color: var(--white);
+  font-size: 1em;
+  font-weight: bold;
+  border: 0 solid var(--yellow);
+  
+}
+
+.works, .works2{
+ 	display: flex;
+ 	margin: 0;
+ 	flex-flow: row wrap;
+ }
+
+ .work{
+ 	padding: 20px;
+ 	margin: 0 auto;
+   	width: 20%;
+  }
+
+ .work1, .work2, .work3, .work4 {
+ 	width: 20%;
+ }
+/*MEDIA-QUERY*/
+@media (max-width: 768px)
+{
+	.toggle
+	{
+		display: block;
+	}
+	ul
+	{
+		width: 100%;
+		display:none;
+	}
+	ul li
+	{
+		display: block;
+		text-align: center;
+	}
+	.active
+	{
+		display: block;
+	}
+
+}
+
+@media screen and (max-width: 430px) {
+  /* h1 child element changed to display block */
+  h1 span {
+    display: block;
+  }
+  
+  .info {
+  	align-self: center;
+  	position: relative;
+  	margin-left: 5px;
+  }
+  footer{
+	width: 100%;
+	align-self: center;
+  margin-top: -18px
+  }
+  .socials{
+    position: relative;
+  }
+
+}
+
+@media screen and (min-width: 431px) and (max-width: 499px) {
+  /*
+** Minor changes to the header and portfolio sections
+*/
+  /* change the display of the h1 text */
+  h1 span {
+    display: block;
+  }
+  
+  /* Portfolio section retouched */
+  .work {
+    width: 80%;
+    height: 200px;
+  }
+  .work img {
+    height: 100%;
+  }
+  .detail {
+    top: 20px;
+    left: 14px;
+    right: 14px;
+    bottom: 10px;
+    padding-top: 10px;
+  }
+  .detail p {
+    font-size: 1em;
+    padding-top: 10px;
+  }
+
+  footer{
+  width: 100%;
+  margin-top: -18px
+
+  }
+  .socials{
+    position: relative;
+
+  }
+ 
+}
+
+@media screen and (min-width: 500px) and (max-width: 629px) {
+  /*
+** Major changes to the portfolio
+** Contact Me and Footer sections
+** Using FLEXBOX LAYOUT.
+*/
+  /* Restyling the Portfolio section */
+
+  main {
+    margin: 0;
+  }
+  .profile-img {
+    margin-top: -80px;
+  }
+  /* Touching the Form for the contact section */
+  input {
+    width: 356px;
+    margin-left: 3px;
+  
+  }
+  label {
+    display: block;
+    margin: 0;
+    align-self: center;
+  }
+  button {
+    width: 40%;
+   }
+
+  textarea {
+    width: 100%;
+  }
+
+  .userinfo {
+    /*display: flex;
+    align-self: flex-end;*/
+    width: 100%;
+    background: var(--baseColor);
+  }
+  .input-data {
+    display: flex;
+  }
+  textarea, button{
+    align-self: center;
+  }
+  form {
+    /*display: flex;*/
+    /*align-items: center;*/
+    width: 88%;
+    margin: 0 auto;
+    border: 5px solid var(--baseColor);
+    background: var(--baseColor);
+  }
+
+  /* changing the footer elements position */
+  footer {
+    min-height: 18vh;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2px;
+  }
+  .info {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 630px) {
+  /*
+  ** GRID LAYOUT is used for changing the layout of
+  ** the portfolio, contact me, and footer sections.
+  */
+  /* form for contact section redesigned */
+  header {
+	height: 30vh;
+}
+
+ .works, .works2{
+ 	display: flex;
+ 	margin: 0;
+ 	flex-flow: row wrap;
+ }
+
+ .work{
+ 	padding: 20px;
+ 	margin: 0 auto;
+  width: 40%;
+  }
+
+ .work1, .work2, .work3, .work4 {
+ 	width: 40%;
+ }
+
+  form {
+    width: 97.9%;
+    display: flex;
+    margin: 0 auto;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background: var(--baseColor);
+  }
+  .userinfo {
+    background: var(--baseColor);
+    width: 100%;
+  }
+   textarea {
+    border: 5px solid var(--baseColor);
+    margin: 0px 0px 10px 0px;
+    width: 100%;
+    height: 40%;
+  }
+
+   
+   button {
+    height: initial;
+    width: 40%;
+    margin-top: -10px;
+  }
+  
+ the FOOTER LAYOUT
+  footer {
+    display: flex;
+    width: 100%;
+    min-height: 18vh;
+    font-size: 14px;
+    justify-content: space-around;
+    margin-top: -10px;    
+  }
+  .info, .socials {
+    margin-top: 7;
+    text-align: center;
+  }
+  .socials {
+    margin: 0 auto;
+
+  }
+ }
+
+@media screen and (min-width: 720px) {
+  header {
+    display: inline-block;
+    height: 25vh;
+    margin: 0 0 10px 0;
+    width: 100%;
+  }
+  #logo {
+ 
+    width: 50%;
+    margin: 0;
+    position: absolute;
+    top: 9.5px;
+    left: 9px;
+    max-height: 100px;
+    max-width: 45px;
+  }
+  .heading {
+
+    font-size: 1.5em;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 20px;
+
+  }
+
+  .heading h2 {
+  	font-size: 1.2em;
+  }
+  nav {
+    order: 3;
+    grid-column: 1 / -1;
+    grid-row: 3;
+    background: var(--DarkGrayColor);
+  }
+
+  header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: auto;
+    transform: translate(0, 0);
+    position: static;
+  }
+  #open_menu,
+  .close-menu {
+    display: none;
+  }
+  nav ul li>a,
+  #remove-border {
+    color: var(--lightGrayColor);
+    border-bottom: 0;
+  }
+  nav ul li>a:hover:not(#close_menu) {
+    color: var(--baseColor);
+    background: var(--lightGrayColor);
+    border-bottom: 1px solid var(--accentColor);
+  }
+  .profile-img {
+    width: 50%;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    right: 12px;
+    max-height: 250px;
+    max-width: 100px;
+  }
+  #about {
+    margin-top: 18px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  #about,
+  #experience,
+  #contact {
+    width: 95%;
+    margin: 23px auto;
+  }
+  header{
+  	margin: -5px -5px -5px 0px;
+  	width: 100%;
+  	height: 30vh;
+  }
+  .heading {
+    font-size: 1.8em;
+  }
+  .heading h2 {
+    padding-top: 1px;
+    font-size: 1.1em;
+  }
+  .profile-img {
+    top: 10px;
+    right: 30px;
+    max-height: 250px;
+    max-width: 130px;
+  }
+  nav {
+    margin-top: 27.5px;
+  }
+  .portfolio {
+    width: 95%;
+    margin: auto;
+  }
+
+  #contact {
+  	margin-top: 30px;
+  }
+  form {
+    width: 100%;
+  }
+  footer{
+    margin-top: -20px;
+  }
+}
+
+@media screen and (min-width: 956px) {
+  .heading h1 {
+    font-size: 1.6em;
+  }
+  .heading h2 {
+    margin-top: -15px;
+  }
+  .wrapper {
+    font-size: 1.2em;
+  }
+  .profile-img {
+    top: 10px;
+    right: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1118px) {
+  .profile-img {
+    top: 10px;
+    right: 130px;
+  }
+  #about,
+  #experience,
+  #contact,
+  .portfolio {
+    width: 85%;
+    border-right: 0;
+  }
+  section h2 {
+    border-right: 0;
+    border-bottom: 5px solid var(--accentColor);
+    width: 170px;
+  }
+}

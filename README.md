@@ -7,6 +7,6 @@
         ## Portfolio Project
 
 
-Follow this [link](https://github.com/routerjude/jude.github.io/home.html) to visit the live page for the project.
+Follow this [link](https://routerjude/judebio.github.io) to visit the live page for the project.
 Thank you!
       
